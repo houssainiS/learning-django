@@ -1,1 +1,7 @@
-<h1>name = {{name}} & age = {{age}}</h1>
+<h1>full name = {{name|capfirst}} </h1>
+<h1>name length = {{name|length}} </h1>
+<h1>sliced fist 10 characters = {{name|slice:':10'}} </h1>
+<h1>age = {{age|default:"not found"}}</h1>
+<h1>adding mahmoud :  {{name|add:' mahmoud'}}</h1>
+<h1>cutting all spces : {{name|cut:' '}}</h1>
+<h1>changing file size : {{size|filesizeformat}}</h1>
