@@ -1,3 +1,12 @@
+
+<!-- % tags % in DTL-->
+
+
+{% extends 'base.html' %}
+
+
+<!--filters in DTL-->
+
 <h1>full name = {{name|capfirst}} </h1>
 <h1>name length = {{name|length}} </h1>
 <h1>sliced fist 10 characters = {{name|slice:':10'}} </h1>
@@ -5,3 +14,7 @@
 <h1>adding mahmoud :  {{name|add:' mahmoud'}}</h1>
 <h1>cutting all spces : {{name|cut:' '}}</h1>
 <h1>changing file size : {{size|filesizeformat}}</h1>
+
+
+
+

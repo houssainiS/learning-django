@@ -6,5 +6,5 @@ def index(request):
     x={'name' : 'ali mazen mohamed hasan','size':984985148}
     return render(request,'pages/index.html',x)
 
-def about(requeest):
-    pass
+def about(request):
+    return render(request,'pages/about.html')
