@@ -4,3 +4,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hello world.")
+
+def about(requeest):
+    return HttpResponse('about page')
