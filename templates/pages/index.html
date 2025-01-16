@@ -6,6 +6,7 @@
 
 
 <!--filters in DTL-->
+{%block content%}
 
 <h1>full name = {{name|capfirst}} </h1>
 <h1>name length = {{name|length}} </h1>
@@ -15,6 +16,6 @@
 <h1>cutting all spces : {{name|cut:' '}}</h1>
 <h1>changing file size : {{size|filesizeformat}}</h1>
 
-
+{%endblock content%}
 
 
