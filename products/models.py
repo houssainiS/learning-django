@@ -9,3 +9,5 @@ class Product(models.Model):
     image = models.ImageField(upload_to='photos/%Y/%m/%d')
     active = models.BooleanField(default=True)
     
+    def __str__(self):
+        return self.name
