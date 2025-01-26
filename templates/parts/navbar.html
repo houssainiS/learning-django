@@ -1,5 +1,17 @@
-<span><a href="{% url 'index'%}">home</a></span>
-<span><a href="{% url 'about'%}">about</a></span>
+{% load static %}
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="{% url 'index' %}">MyWebsite</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <!--    <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li> -->
+        </ul>
+    </div>
+</nav>
 
 
 {% comment %}
