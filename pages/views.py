@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .models import Login
+from .forms import LoginForm
 # Create your views here.
 
 def index(request):
@@ -14,4 +15,4 @@ def about(request):
             data.save()
             
 
-    return render(request,'pages/about.html')
+    return render(request,'pages/about.html',{'lf':LoginForm}) #we pass the form to the about.html template 
