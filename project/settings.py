@@ -31,7 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [ 
-    'suit', # added suit app in the setting.py
+    #'suit', # added suit app in the setting.py
+    
+    'grappelli', # added grappelli app in the setting.py
 
     'django.contrib.admin',
     'django.contrib.auth',
