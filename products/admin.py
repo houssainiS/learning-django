@@ -10,6 +10,8 @@ class ProductAdmin(admin.ModelAdmin):
 
 
     search_fields = ('name','price') #enable the search functionality in the admin list view by searching the name and price fields
+
+    list_filter = ('catigory', 'active') #enable the filter functionality in the admin list view by filtering the price, catigory and active fields
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Test)
 admin.site.site_header = 'SI Houssaini'
