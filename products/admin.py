@@ -6,6 +6,8 @@ class ProductAdmin(admin.ModelAdmin):
     list_display = ('id','name','price','catigory') #display the id, name, price and catigory fields in the admin list view
     list_display_links =('id','name') #make the id and name fields clickable in the admin list view
 
+    list_editable = ('price','catigory') #enable the price and catigory fields to be edited in the admin list view
+
 admin.site.register(Product, ProductAdmin)
 admin.site.register(Test)
 admin.site.site_header = 'SI Houssaini'
